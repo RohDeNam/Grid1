@@ -1,0 +1,46 @@
+.parent {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    max-width: 1280px;
+    margin: 0 auto;
+    grid-template-areas:
+    "header header header header"
+    "aside nav main main"
+    "aside nav main main"
+    "section section section section"
+    "section section section section"
+    "footer footer footer footer"
+}
+
+.parent>* {
+    background-color: lightseagreen;
+    padding: 20px;
+}
+
+.child1 {
+    grid-area: header;
+}
+
+.child2 {
+    grid-area: aside;
+}
+
+.child3 {
+    grid-area: nav;
+}
+
+.child4 {
+    grid-area: main;
+}
+
+.child5 {
+    grid-area: section;
+    text-align: justify;
+}
+
+.child6 {
+    grid-area: footer;
+}

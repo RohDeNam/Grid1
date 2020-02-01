@@ -1,0 +1,211 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    /* grid-auto-rows: minmax(100vh, auto); */
+    grid-template-areas:
+    "header menu menu menu"
+    "hero hero hero hero"
+    "main main empty image"
+    "main main empty extra"
+    "banner banner banner banner"
+}
+
+.parent>* {
+    padding: 10px;
+}
+.parent>.header {
+    height:10vh;
+    background-color: black;
+    color: whitesmoke;
+    grid-area: header;
+}
+
+.parent>.menu {
+    height: 10vh;
+    background-color: lightcoral;
+    color: whitesmoke;
+    grid-area: menu;
+}
+
+.parent>.hero {
+    height: 40vh;
+    background-color: lightskyblue;
+    color: whitesmoke;
+    grid-area: hero;
+}
+
+.parent>.main {
+    height: 30vh;
+    background-color: rgb(68, 43, 184);
+    color: whitesmoke;
+    grid-area: main;
+}
+
+.parent>.empty {
+    height: 30vh;
+    background-color: rgb(214, 212, 212);
+    color: whitesmoke;
+    grid-area: empty;
+}
+
+.parent>.image {
+    /* height: 30vh; */
+    background-color: rgb(117, 214, 214);
+    color: black;
+    grid-area: image;
+}
+
+.parent>.extra {
+    /* height: 10vh; */
+    background-color: rgb(141, 231, 163);
+    color: black;
+    grid-area: extra;
+}
+
+.parent>.banner {
+    height: 20vh;
+    background-color: rgb(216, 224, 95);
+    color: black;
+    grid-area: banner;
+}
+
+@media screen and (max-width: 720px) {
+    .parent {
+        height: 100vh;
+        grid-gap: 10px;
+        grid-template-areas:
+        "header header header header"
+        "menu menu menu menu"
+        "hero hero hero hero"
+        "main main main main"
+        "banner banner banner banner"
+        "extra extra extra extra"
+        "image image image image"
+        "empty empty empty empty"
+    }
+    .parent>.header {
+        height: 5vh;
+        background-color: black;
+        color: whitesmoke;
+        grid-area: header;
+    }
+    
+    .parent>.menu {
+        height: 5vh;
+        background-color: lightcoral;
+        color: whitesmoke;
+        grid-area: menu;
+    }
+    
+    .parent>.hero {
+        height: 10vh;
+        background-color: lightskyblue;
+        color: whitesmoke;
+        grid-area: hero;
+    }
+    
+    .parent>.main {
+        height: 40vh;
+        background-color: rgb(68, 43, 184);
+        color: whitesmoke;
+        grid-area: main;
+    }
+    
+    .parent>.empty {
+        height: 0vh;
+        background-color: rgb(214, 212, 212);
+        color: whitesmoke;
+        grid-area: empty;
+    }
+    
+    .parent>.image {
+        height: 10vh;
+        background-color: rgb(117, 214, 214);
+        color: black;
+        grid-area: image;
+    }
+    
+    .parent>.extra {
+        height: 10vh;
+        background-color: rgb(141, 231, 163);
+        color: black;
+        grid-area: extra;
+    }
+    
+    .parent>.banner {
+        height: 20vh;
+        background-color: rgb(216, 224, 95);
+        color: black;
+        grid-area: banner;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .parent {
+        height: 100vh;
+        grid-gap: 10px;
+        grid-template-areas:
+        "header header header header"
+        "hero hero hero hero"
+        "menu main main main"
+        "menu banner banner banner"
+        "menu extra extra image"
+        "empty empty empty empty"
+    }
+    .parent>.header {
+        height: 5vh;
+        background-color: black;
+        color: whitesmoke;
+        grid-area: header;
+    }
+    
+    .parent>.menu {
+        height: 85vh;
+        background-color: lightcoral;
+        color: whitesmoke;
+        grid-area: menu;
+    }
+    
+    .parent>.hero {
+        height: 5vh;
+        background-color: lightskyblue;
+        color: whitesmoke;
+        grid-area: hero;
+    }
+    
+    .parent>.main {
+        height: 40vh;
+        background-color: rgb(68, 43, 184);
+        color: whitesmoke;
+        grid-area: main;
+    }
+    
+    .parent>.empty {
+        height: 0vh;
+        background-color: rgb(214, 212, 212);
+        color: whitesmoke;
+        grid-area: empty;
+    }
+    
+    .parent>.image {
+        height: 30vh;
+        background-color: rgb(117, 214, 214);
+        color: black;
+        grid-area: image;
+    }
+    
+    .parent>.extra {
+        height: 30vh;
+        background-color: rgb(141, 231, 163);
+        color: black;
+        grid-area: extra;
+    }
+    
+    .parent>.banner {
+        height: 10vh;
+        background-color: rgb(216, 224, 95);
+        color: black;
+        grid-area: banner;
+    }
+} 
